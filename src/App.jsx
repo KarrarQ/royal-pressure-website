@@ -4,6 +4,7 @@ import { useInView } from 'framer-motion';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Services from './components/Services';
+import About from './components/About';
 import WhyChooseUs from './components/WhyChooseUs';
 import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
@@ -34,6 +35,10 @@ function App() {
       
       <AnimatedSection>
         <Services />
+      </AnimatedSection>
+      
+      <AnimatedSection delay={0.1}>
+        <About />
       </AnimatedSection>
       
       <AnimatedSection delay={0.1}>

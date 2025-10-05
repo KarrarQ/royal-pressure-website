@@ -12,18 +12,6 @@ const Hero = () => {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center">
-          {/* Logo */}
-          <a href="#home" className="mb-8 inline-block cursor-pointer">
-            <img 
-              src="/logo.png" 
-              alt="Royal Pressure" 
-              className="h-32 w-auto filter drop-shadow-2xl hover:scale-105 transition duration-300"
-              onError={(e) => {
-                e.target.style.display = 'none';
-              }}
-            />
-          </a>
-
           {/* Main Heading */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white mb-6 leading-tight">
             Denver's Professional
@@ -59,14 +47,6 @@ const Hero = () => {
             >
               Get Free Quote
             </a>
-          </div>
-
-          {/* About the Owner */}
-          <div className="max-w-3xl mx-auto mb-12 bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20">
-            <h3 className="text-2xl font-bold text-yellow-300 mb-3">Meet the Owner</h3>
-            <p className="text-white text-lg leading-relaxed">
-              <span className="font-semibold text-yellow-300">McKinnley Alvarez</span> founded Royal Pressure LLC with a commitment to quality and customer satisfaction. As an owner-operated business, McKinnley personally oversees every job to ensure your property receives the detailed, professional cleaning it deserves. When you choose Royal Pressure, you're working directly with someone who takes pride in every wash.
-            </p>
           </div>
 
           {/* Trust Badges */}
