@@ -61,6 +61,14 @@ const Hero = () => {
             </a>
           </div>
 
+          {/* About the Owner */}
+          <div className="max-w-3xl mx-auto mb-12 bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20">
+            <h3 className="text-2xl font-bold text-yellow-300 mb-3">Meet the Owner</h3>
+            <p className="text-white text-lg leading-relaxed">
+              <span className="font-semibold text-yellow-300">McKinnley Alvarez</span> founded Royal Pressure LLC with a commitment to quality and customer satisfaction. As an owner-operated business, McKinnley personally oversees every job to ensure your property receives the detailed, professional cleaning it deserves. When you choose Royal Pressure, you're working directly with someone who takes pride in every wash.
+            </p>
+          </div>
+
           {/* Trust Badges */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto text-white">
             {[

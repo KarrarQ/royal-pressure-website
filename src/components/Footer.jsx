@@ -74,7 +74,8 @@ const Footer = () => {
         {/* Social Links & Copyright */}
         <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="text-gray-400 text-sm mb-4 md:mb-0">
-            © {currentYear} Royal Pressure LLC. All rights reserved.
+            © {currentYear} Royal Pressure LLC. All rights reserved.<br />
+            <span className="text-gray-500">Founded & operated by McKinnley Alvarez</span>
           </div>
           
           <div className="flex space-x-6">

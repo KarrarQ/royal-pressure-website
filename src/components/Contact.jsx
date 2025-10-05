@@ -74,6 +74,9 @@ const Contact = () => {
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Ready to make your property shine? Contact us today for a free, no-obligation quote
           </p>
+          <p className="text-lg text-gray-500 mt-4 italic">
+            - Message <span className="font-semibold text-blue-600">McKinnley Alvarez</span> directly
+          </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
