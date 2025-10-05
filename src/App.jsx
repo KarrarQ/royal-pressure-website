@@ -34,11 +34,11 @@ function App() {
       <Hero />
       
       <AnimatedSection>
-        <Services />
+        <About />
       </AnimatedSection>
       
       <AnimatedSection delay={0.1}>
-        <About />
+        <Services />
       </AnimatedSection>
       
       <AnimatedSection delay={0.1}>
