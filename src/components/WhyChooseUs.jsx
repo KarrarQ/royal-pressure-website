@@ -1,38 +1,21 @@
 import { FaLeaf, FaDollarSign, FaTruck, FaAward, FaShieldAlt, FaClock } from 'react-icons/fa';
+import { reasons as reasonsData } from '../data/whyChooseUsData';
 
 const WhyChooseUs = () => {
-  const reasons = [
-    {
-      icon: <FaLeaf className="text-4xl" />,
-      title: 'Eco-Friendly',
-      description: 'We use environmentally safe cleaning products that are tough on dirt but gentle on the planet.',
-    },
-    {
-      icon: <FaDollarSign className="text-4xl" />,
-      title: 'Affordable Pricing',
-      description: 'Competitive rates without compromising on quality. Get professional results at fair prices.',
-    },
-    {
-      icon: <FaTruck className="text-4xl" />,
-      title: 'Mobile Service',
-      description: 'We come to you! Convenient on-site washing saves you time and hassle.',
-    },
-    {
-      icon: <FaAward className="text-4xl" />,
-      title: 'Reliable Results',
-      description: '100% satisfaction guarantee. We don\'t leave until you\'re completely happy with the results.',
-    },
-    {
-      icon: <FaShieldAlt className="text-4xl" />,
-      title: 'Fully Insured',
-      description: 'Licensed and insured for your peace of mind. Your property is protected.',
-    },
-    {
-      icon: <FaClock className="text-4xl" />,
-      title: 'Flexible Scheduling',
-      description: 'We work around your schedule with convenient appointment times, including weekends.',
-    },
-  ];
+  // Map icon names to actual icon components
+  const iconMap = {
+    FaLeaf: <FaLeaf className="text-4xl" />,
+    FaDollarSign: <FaDollarSign className="text-4xl" />,
+    FaTruck: <FaTruck className="text-4xl" />,
+    FaAward: <FaAward className="text-4xl" />,
+    FaShieldAlt: <FaShieldAlt className="text-4xl" />,
+    FaClock: <FaClock className="text-4xl" />,
+  };
+
+  const reasons = reasonsData.map(reason => ({
+    ...reason,
+    icon: iconMap[reason.icon]
+  }));
 
   return (
     <section id="why-us" className="py-20 bg-white">

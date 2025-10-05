@@ -1,44 +1,21 @@
 import { FaCar, FaTruck, FaBuilding, FaStore, FaHome, FaWarehouse } from 'react-icons/fa';
+import { services as servicesData, additionalServices } from '../data/servicesData';
 
 const Services = () => {
-  const services = [
-    {
-      icon: <FaCar className="text-5xl text-blue-600" />,
-      title: 'Car Wash',
-      description: 'Professional exterior car washing that leaves your vehicle spotless and shining.',
-      features: ['Hand wash option', 'Wheel cleaning', 'Spot-free rinse'],
-    },
-    {
-      icon: <FaTruck className="text-5xl text-blue-600" />,
-      title: 'Truck Wash',
-      description: 'Heavy-duty cleaning for trucks of all sizes, removing dirt, grime, and road film.',
-      features: ['Commercial trucks', 'Pickup trucks', 'Large vehicles'],
-    },
-    {
-      icon: <FaWarehouse className="text-5xl text-blue-600" />,
-      title: 'Fleet Services',
-      description: 'Comprehensive fleet washing programs for businesses with multiple vehicles.',
-      features: ['Scheduled service', 'Volume discounts', 'On-site available'],
-    },
-    {
-      icon: <FaBuilding className="text-5xl text-blue-600" />,
-      title: 'Commercial Properties',
-      description: 'Building exteriors, parking lots, and commercial space cleaning.',
-      features: ['Office buildings', 'Parking structures', 'Warehouses'],
-    },
-    {
-      icon: <FaHome className="text-5xl text-blue-600" />,
-      title: 'Residential',
-      description: 'House washing, driveways, decks, and fences for homeowners.',
-      features: ['House exteriors', 'Driveways', 'Patios & decks'],
-    },
-    {
-      icon: <FaStore className="text-5xl text-blue-600" />,
-      title: 'Storefronts',
-      description: 'Keep your business looking professional with regular storefront cleaning.',
-      features: ['Windows', 'Sidewalks', 'Entryways'],
-    },
-  ];
+  // Map icon names to actual icon components
+  const iconMap = {
+    FaCar: <FaCar className="text-5xl text-blue-600" />,
+    FaTruck: <FaTruck className="text-5xl text-blue-600" />,
+    FaWarehouse: <FaWarehouse className="text-5xl text-blue-600" />,
+    FaBuilding: <FaBuilding className="text-5xl text-blue-600" />,
+    FaHome: <FaHome className="text-5xl text-blue-600" />,
+    FaStore: <FaStore className="text-5xl text-blue-600" />,
+  };
+
+  const services = servicesData.map(service => ({
+    ...service,
+    icon: iconMap[service.icon]
+  }));
 
   return (
     <section id="services" className="py-20 bg-gray-50">
@@ -91,16 +68,7 @@ const Services = () => {
         <div className="bg-blue-600 rounded-xl p-8 text-white text-center">
           <h3 className="text-3xl font-bold mb-4">Additional Services</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
-            {[
-              'Apartment Complexes',
-              'Dealer Lots',
-              'Gutter Cleaning',
-              'Concrete Cleaning',
-              'Deck Cleaning',
-              'Fence Cleaning',
-              'Window Cleaning',
-              'Specialty Vehicles',
-            ].map((service) => (
+            {additionalServices.map((service) => (
               <div key={service} className="bg-white/10 backdrop-blur-sm py-3 px-4 rounded-lg">
                 <p className="font-medium">{service}</p>
               </div>

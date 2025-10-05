@@ -1,57 +1,7 @@
 import { FaStar, FaQuoteLeft } from 'react-icons/fa';
+import { testimonials } from '../data/testimonialsData';
 
 const Testimonials = () => {
-  const testimonials = [
-    {
-      name: 'Michael Rodriguez',
-      role: 'Fleet Manager',
-      company: 'Denver Delivery Services',
-      rating: 5,
-      text: 'Royal Pressure has been washing our delivery fleet for 6 months now. They\'re always on time, do great work, and our trucks look brand new every time. Highly recommend for any business with vehicles.',
-      image: '👨‍💼',
-    },
-    {
-      name: 'Sarah Thompson',
-      role: 'Homeowner',
-      company: 'Thornton, CO',
-      rating: 5,
-      text: 'I had my house and driveway done last month and WOW. The difference is incredible. They were professional, affordable, and cleaned up everything perfectly. My neighbors have been asking who did the work.',
-      image: '👩',
-    },
-    {
-      name: 'David Chen',
-      role: 'Business Owner',
-      company: 'Chen\'s Auto Sales',
-      rating: 5,
-      text: 'We use Royal Pressure weekly for our dealership lot. The cars always look showroom ready and it\'s made a real difference in our sales. Great service and fair pricing. These guys know what they\'re doing.',
-      image: '👨',
-    },
-    {
-      name: 'Jennifer Williams',
-      role: 'Property Manager',
-      company: 'Lakewood Apartments',
-      rating: 5,
-      text: 'Managing a 50-unit complex means keeping the exterior clean is crucial. Royal Pressure does our buildings, walkways, and parking areas monthly. Reliable, thorough, and our residents love how clean everything looks',
-      image: '👩‍💼',
-    },
-    {
-      name: 'Robert Martinez',
-      role: 'Restaurant Owner',
-      company: 'The Denver Grill',
-      rating: 5,
-      text: 'First impressions matter in the restaurant business. Royal Pressure keeps our storefront, patio, and parking area spotless. They work around our schedule and never disrupt our operations. Couldn\'t be happier',
-      image: '👨‍🍳',
-    },
-    {
-      name: 'Lisa Anderson',
-      role: 'Homeowner',
-      company: 'Golden, CO',
-      rating: 5,
-      text: 'After years of buildup, my deck and fence looked terrible. Royal Pressure transformed them in just a few hours! The team was friendly, respectful of my property, and the results exceeded my expectations. Worth every penny fr',
-      image: '👩‍🦰',
-    },
-  ];
-
   return (
     <section id="testimonials" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
